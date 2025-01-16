@@ -21,8 +21,24 @@ nav > ul, .menu-navigator {
     justify-content: space-evenly;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 20rem;
+}
+
 .menu-navigator {
     list-style: none;
     display: flex;
-    gap: 15rem;
+}
+
+.meal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.meal-photo {
+    height: 20rem;
 }
