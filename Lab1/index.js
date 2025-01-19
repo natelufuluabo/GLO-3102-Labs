@@ -1,24 +1,21 @@
-const navMenuContainer = document.getElementById("nav-menu-container");
-console.log(navMenuContainer)
+const navMenuContainer = document.querySelector(".nav-links-phone");
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close-btn');
 
-if (window.screen.width <= 425) {
-    navMenuContainer.classList.add('hidden');
-    navMenuContainer.classList.remove('desktop-css');
-} else if (window.screen.width >= 425 && window.screen.width <= 768) {
-    navMenuContainer.classList.remove('hidden');
-    navMenuContainer.classList.add('desktop-css');
-} 
-
 menuBtn.addEventListener('click', () => {
+    navMenuContainer.classList.remove('slideOutLeft');
     navMenuContainer.classList.remove('hidden');
-    // navMenuContainer.style.display = "flex";
-    navMenuContainer.classList.add('phone-css');
-    closeBtn.classList.remove('hidden');
+    navMenuContainer.classList.add('slideInRight');
 });
 
 closeBtn.addEventListener('click', () => {
-    navMenuContainer.classList.remove('phone-css');
-    navMenuContainer.classList.add('hidden');
-})
+    navMenuContainer.classList.remove('slideInRight');
+    navMenuContainer.classList.add('slideOutLeft');
+});
+
+navMenuContainer.addEventListener('animationend', (event) => {
+    if (event.animationName === "slideOutLeft") { // Ensure it's the correct animation
+        navMenuContainer.classList.remove('slideOutLeft');
+        navMenuContainer.classList.add('hidden');
+    }
+});
