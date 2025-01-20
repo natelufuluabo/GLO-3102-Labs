@@ -1,3 +1,30 @@
+@media (max-width: 375px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    .meal-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-links-container {
+        padding: 0 .5rem;
+    }
+}
+
+@media (max-width: 426px) and (min-width: 376px) {
+    main {
+        padding: 0 3rem;
+    }
+
+    .logo-links-container {
+        position: relative;
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width: 426px) {
     html {
         font-size: 100%;
@@ -7,19 +34,9 @@
         grid-template-columns: 1fr;
     }
 
-    main {
-        padding: 0 3rem;
-    }
-
     .logo-img {
         width: 30%;
         margin-top: .5rem;
-    }
-
-    .logo-links-container {
-        position: relative;
-        width: 100%;
-        padding: 0 1rem;
     }
 
     .nav-links-reg {
@@ -127,7 +144,6 @@
         border: .1rem solid #E07A5F;
         border-radius: .2rem;
         background-color: #fff;
-        margin-right: .75rem;
         cursor: pointer;
     }
 
