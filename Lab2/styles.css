@@ -1,0 +1,187 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #22c1c3, #fdbb2d);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(73, 73, 73);
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: table;
+}
+
+input#searchBox {
+    color: inherit;
+    padding: 1.2rem 1rem;
+    width: 40vw;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+ul {        
+    background: #fff;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    height: 0;
+    overflow: hidden;  
+    box-shadow: .1rem .2rem .5rem rgba(0,0,0,0.2);
+    transition: .4s height;
+}
+
+ul li {
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    list-style: none;
+    border-top: .1rem solid #ddd;
+}
+
+.match {
+    font-weight: 600;
+    color: green;
+}
+
+.search-box {
+    display: table;
+}
+
+input#searchBox {
+    flex: 1;
+    padding: 1.2rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.searchBox-inputWrapper,
+.searchBox-clearWrapper {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.searchBox-clear {
+	color: #CCC;
+	padding: 0;
+	cursor: pointer;
+	font-size: inherit;
+	cursor: pointer;
+	line-height: 1.5;
+ 	-webkit-transition: all 3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.searchBox-clearInput:hover {
+	color: #AAA;
+}
+
+.fa {
+    font-size: 1.8rem;
+}
+
+.searchBox-clearWrapper {
+    padding-right: 0.5rem;
+}
+
+.search-box-container {
+	background: white;
+	border: 1px solid #d6dadc;
+	border-radius: 3px;
+	display: table;
+}
+
+@media only screen and (min-width: 600px) {
+  input#search {
+    width: 40vw;
+  }
+  .search-box-container {
+    width: 40vw;
+  }
+}
+
+/* @import url('https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css'); */
+
+/* body, html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #222;
+}
+form {
+  width: 30rem;
+  padding: 1rem;
+  background: #222;
+  font-size: 1.5rem;
+}
+h1 {
+  color: #FFF;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.searchBox-fakeInput {
+	background: white;
+	border: 1px solid #d6dadc;
+	border-radius: 3px;
+	display: table;
+}
+
+.searchBox-fakeInput.is-focussed {
+  border: 2px solid cyan !important;
+}
+.searchBox-inputWrapper,
+.searchBox-clearWrapper {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.searchBox-input {
+ 	background-color: transparent;
+	border: none;
+  box-shadow: none;
+  outline: none;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: inherit;
+}
+.searchBox-input:focus {
+  outline: none;
+	background: #FFF;
+  box-shadow: none;
+}
+.searchBox-clearWrapper {
+  padding-right: 0.5rem;
+}
+.searchBox-clear {
+	color: #CCC;
+	padding: 0;
+	cursor: pointer;
+	font-size: inherit;
+	cursor: pointer;
+	line-height: 1.5;
+ 	-webkit-transition: all 3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.searchBox-clearInput:hover {
+	color: #AAA;
+}  */
