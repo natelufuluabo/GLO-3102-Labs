@@ -15,7 +15,6 @@ export const appStore = defineStore('appState', () => {
     return todos.value
   }
   function updateTodos(p_todos) {
-    console.log(p_todos)
     todos.value = p_todos
   }
 
